@@ -72,7 +72,7 @@ var authenticate = function(credentials, callback) {
 
 }).controller('home', function($http) {
   var self = this;
-  $http.get('resource/').then(function(response) {
+  $http.get('http://localhost:9000/').then(function(response) {
     self.greeting = response.data;
   })
 });
